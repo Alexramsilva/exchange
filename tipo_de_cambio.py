@@ -72,7 +72,7 @@ df_fix = load_fix_data()
 if df_fix is None:
     st.error("No se pudieron obtener datos de Banxico.")
 else:
-    fig1, ax1 = plt.subplots(figsize=(12, 5))
+    fig1, ax1 = plt.subplots(figsize=(11, 4))
     ax1.plot(df_fix["fecha"], df_fix["dato"], label="FIX", linewidth=1.8)
 
     # Punto final
@@ -90,14 +90,14 @@ else:
 # ---------------------------
 # GRÁFICO 2: ÍNDICE DEL DÓLAR
 # ---------------------------
-st.subheader("📌 Índice del Dólar (DX-Y.NYB)")
+st.subheader("Índice del Dólar (DX-Y.NYB)")
 
 dxy = load_dxy_data()
 
 if dxy is None or dxy.empty:
     st.error("No se pudieron obtener datos del índice del dólar.")
 else:
-    fig2, ax2 = plt.subplots(figsize=(12, 5))
+    fig2, ax2 = plt.subplots(figsize=(11, 4))
     ax2.plot(dxy.index, dxy.values, label="Dollar Index", linewidth=1.8)
 
     ax2.set_title("Índice del Dólar (Últimos 2 años)")
