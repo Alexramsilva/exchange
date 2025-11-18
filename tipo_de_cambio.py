@@ -100,6 +100,11 @@ else:
     fig2, ax2 = plt.subplots(figsize=(11, 4))
     ax2.plot(dxy.index, dxy.values, label="Dollar Index", linewidth=1.8)
 
+    # Punto final
+    ax1.scatter(dxy["fecha"].iloc[-1], dxy["dato"].iloc[-1], color="red", s=40,
+                label=f"Último valor: {df_fix['dato'].iloc[-1]:.2f}")
+
+
     ax2.set_title("Índice del Dólar (Últimos 2 años)")
     ax2.set_xlabel("Fecha")
     ax2.set_ylabel("Índice")
