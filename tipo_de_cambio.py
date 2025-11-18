@@ -88,6 +88,8 @@ else:
     st.pyplot(fig1)
 
 # ---------------------------
+df_fix["dato"].iloc[-1]
+#---------------------------
 # GRÁFICO 2: ÍNDICE DEL DÓLAR
 # ---------------------------
 st.subheader("Índice del Dólar (DX-Y.NYB)")
