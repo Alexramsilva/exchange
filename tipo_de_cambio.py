@@ -19,7 +19,7 @@ import yfinance as yf
 # ---------------------------
 st.set_page_config(page_title="Banxico + Dollar Index", layout="wide")
 
-st.title("📊 Gráficos: Tipo de Cambio FIX (Banxico) y Dólar Index (DX-Y.NYB)")
+st.title("Gráficos: Tipo de Cambio FIX (Banxico) y Dólar Index (DX-Y.NYB)")
 
 # ---------------------------
 # TOKEN DE BANXICO
@@ -65,7 +65,7 @@ def load_dxy_data():
 # ---------------------------
 # GRÁFICO 1: TIPO DE CAMBIO FIX
 # ---------------------------
-st.subheader("📌 Tipo de Cambio FIX (Banxico) desde 2015")
+st.subheader("Tipo de Cambio FIX (Banxico) desde 2015")
 
 df_fix = load_fix_data()
 
