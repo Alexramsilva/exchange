@@ -102,7 +102,7 @@ else:
 
     # Punto final
     ax1.scatter(dxy["fecha"].iloc[-1], dxy["dato"].iloc[-1], color="red", s=40,
-                label=f"Último valor: {df_fix['dato'].iloc[-1]:.2f}")
+                label=f"Último valor: {dxy['dato'].iloc[-1]:.2f}")
 
 
     ax2.set_title("Índice del Dólar (Últimos 2 años)")
