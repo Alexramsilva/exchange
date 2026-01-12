@@ -112,6 +112,12 @@ else:
 
     st.pyplot(fig2)
 
+
+
+
+###########
+
+
 # Personalización de diseño
 st.markdown("""
 <style>
